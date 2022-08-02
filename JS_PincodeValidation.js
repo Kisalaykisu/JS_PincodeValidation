@@ -10,8 +10,8 @@ function validatePincode(pincode){
 }
 
 try{
-    validatePincode("400088");
-    validatePincode("A40000");
+    validatePincode("409988");
+    validatePincode("40998B");
 }
 catch(e){
     console.error(e);
