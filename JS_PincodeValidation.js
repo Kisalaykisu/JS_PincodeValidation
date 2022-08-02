@@ -1,6 +1,6 @@
 console.log("***** Welcome To PinCode Validation *****");
 
-const pincodeRegex = RegExp("^[0-9]{6}$");
+const pincodeRegex = RegExp("^[0-9]{3}\\s{0,1}[0-9]{3}$");
 
 function validatePincode(pincode){
     if(pincodeRegex.test(pincode))
@@ -10,8 +10,8 @@ function validatePincode(pincode){
 }
 
 try{
-    validatePincode("409988");
-    validatePincode("40998B");
+    validatePincode("400908");
+    validatePincode("400 908");
 }
 catch(e){
     console.error(e);
